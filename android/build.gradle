@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:4.2.2'
     }
 }
 
@@ -24,7 +24,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 19
@@ -33,7 +33,7 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
-    buildToolsVersion '28.0.3'
+    namespace 'com.chavesgu.scan'
 }
 
 dependencies {
